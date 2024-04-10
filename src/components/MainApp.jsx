@@ -39,8 +39,8 @@ return (
     <div className={styles.main}>
   {isLoading?<SpinnerMini/>:
   <>
-      <h4 className={styles.title}>advice #{slip.id}</h4>
-      <p>{slip.advice}</p>
+      <h3 className={styles.title}>advice #{slip.id}</h3>
+      <p className={styles.notes}>{`"${slip.advice}"`}</p>
   </>
       }
       <div className={styles.pauseContainer}>
